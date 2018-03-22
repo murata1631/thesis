@@ -54,7 +54,7 @@ int main(void){
 	}
 	
 	srand((unsigned)time(NULL));
-	for(i = 0;i < 4000;i++) {
+	for(i = 0;i < fsize;i++) {
 		str=rand()%94+33;
 		fwrite(&str, sizeof(char), 1, fp);
 	}
